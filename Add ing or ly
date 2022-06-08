@@ -1,0 +1,9 @@
+string=input("Enter a string: ")
+if(len(string)>=3): 
+	if((string[-3:-1]+string[-1])=="ing"):
+		string=string+"ly"
+	else:
+		string=string+"ing"
+	print(string)
+else:
+    print("Length of the string is less than 3")
